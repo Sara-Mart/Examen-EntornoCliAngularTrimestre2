@@ -1,0 +1,13 @@
+<h1>Listado de Series</h1>
+
+<ul>
+    @for (post of posts$ | async; track post.id) {
+    <li>
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.channel }}</p>
+      <p>{{ post.rating }}</p>
+    </li>
+  } @empty {
+    <li>No hay posts</li>
+  }
+</ul>

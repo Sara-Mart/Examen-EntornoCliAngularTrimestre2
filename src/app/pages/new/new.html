@@ -1,0 +1,27 @@
+<a routerLink="/home" class="link">← Volver</a>
+
+<h2>Nueva serie</h2>
+
+<form class="form" [formGroup]="form" (ngSubmit)="save()">
+  <label>
+    Title
+    <input type="text" formControlName="title" />
+  </label>
+
+  <br>
+
+    <label>
+    Channel
+    <input type="text" formControlName="channel" />
+  </label>
+    <br>
+    <label>
+    Rating
+    <input type="text" formControlName="rating" />
+  </label>
+  <br>
+
+
+
+  <button class="btn" type="submit">Crear</button>
+</form>
